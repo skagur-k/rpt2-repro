@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Default",
+	"compilerOptions": {
+		"composite": false,
+		"declaration": true,
+		"declarationMap": false,
+		"declarationDir": "dist/types",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"inlineSources": false,
+		"isolatedModules": true,
+		"moduleResolution": "node",
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"outDir": "dist/esm",
+		"jsx": "react-jsx",
+		"lib": ["ES2016", "ES2017", "DOM", "es6"],
+		"module": "ESNext",
+		"target": "es5",
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"allowSyntheticDefaultImports": true,
+		"typeRoots": ["./node_modules/@types"]
+	},
+	"include": ["src/**/*", "../tsconfig/global.d.ts"],
+	"exclude": ["dist", "build", "node_modules"]
+}
